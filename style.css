@@ -33,6 +33,7 @@ li a{
       justify-content: space-between;
       align-items: center;
       padding: 1rem 1.5rem; 
+      
 }
 .hamburger{
       display: none;
@@ -56,6 +57,7 @@ li a{
       margin: 1rem;
 
 }
+
 .nav-links{
       font-size: 30px;
       padding: 15px;
@@ -154,7 +156,7 @@ h5{
       display: flex;
       justify-content: center;
       color: #000;
-      text-decoration: none;
+      
 
 }
 .flexchild{
