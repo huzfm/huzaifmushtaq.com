@@ -1,60 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Skill Section</title>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <title>Document</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+      <link rel="stylesheet" href="style.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <style>
-     
-      .fa-brands{
+      
+      .single-fact {
+            text-align: center;
+            margin: 45px 0;
+            padding: 8px 16px;
             font-size: 70px;
+      }
+
+      .single-fact p {
+            font-size: 20px;
+            color: white;
+            font-family: "Montserrat", sans-serif;
+            font-weight: 500;
+      }
+
+      .fact.area {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+      }
+
+      .fa-brands{
             color: blue;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-direction: row;
-            
       }
-      body{
-            background-color: #1B1B1B
-      }
-      .skill{
-            display: flex;
-            justify-content: center;
-            color: #000;
-            
-      }
-      .icon{
-            width: 200px;
-            position: relative;
-            top: 250px;
-            left: 100px;
+      
+      .menu li a:hover{
+            text-decoration: none;
+            opacity: 1;
+            color: white;
       }
 </style>
-<body>
-      <div class="skill">
-            
 
-          
-            <a href="#" class="icon">
-                  <i class="fa-brands fa-html5"></i>
-            </a>
-            <a href="#" class="icon">
-                  <i class="fa-brands fa-css3"></i>
-            </a>
-            <a href="#" class="icon">
-                  <i class="fa-brands fa-js"></i>
-            </a>
-            <a href="#" class="icon">
-                  <i class="fa-brands fa-github"></i>
-            </a>
-            <a href="#" class="icon">
-            <i class="fa-brands fa-git"></i>
-            </a>
-            
-            
-      </div>
+<body>
+      <header>
+            <nav class="navbar">
+                  <!-- <a href="#" class="logo">Huzaif Mushtaq</a> -->
+                  <ul class="menu">
+                        <li>
+                              <a href="index.html" class="nav-links">Home</a>
+                        </li>
+                        <li>
+                              <a href="about.html" class="nav-links">About</a>
+                        </li>
+                        <li>
+                              <a href="skill.html" class="nav-links">Skills</a>
+                        </li>
+                        <li>
+                              <a href="project.html" class="nav-links">Projects</a>
+                        </li>
+                  </ul>
+                  <div class="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                  </div>
+            </nav>
+      </header>
+
+      <section class="fact-area">
+            <div class="container">
+                  <div class="fact-box">
+                        <div class="row">
+                              <div class="col-lg col-6 single-fact">
+                                    <i class="fa-brands fa-html5" aria-hidden="true"></i>
+                                    <p>HTML</p>
+                              </div>
+                              <div class="col-lg col-6 single-fact">
+                                    <i class="fa-brands fa-css3"></i>
+                                    <p>CSS</p>
+                              </div>
+                              <div class="col-lg col-6 single-fact">
+                                    <i class="fa-brands fa-js"></i>
+                                    <p>JS</p>
+                              </div>
+                              <div class="col-lg col-6 single-fact">
+                                    <i class="fa-brands fa-github"></i>
+                                    <p>Github</p>
+                              </div>
+                              <div class="col-lg col-6 single-fact">
+                                    <i class="fa-brands fa-square-git"></i>
+                                    <p>Git</p>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+      </section>
 </body>
+<script>
+      const hamburger = document.querySelector('.hamburger');
+      const navbar = document.querySelector('.menu');
+      hamburger.addEventListener('click', function () {
+            hamburger.classList.toggle('active');
+            navbar.classList.toggle('active');
+      });
+</script>
+
 </html>
