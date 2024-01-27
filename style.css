@@ -226,6 +226,7 @@ h5{
       font-size: 35px;
       position: relative;
       top: 80px;
+      font-weight: 550;
       
 }
 @media only screen and (max-width: 600px) {
@@ -276,6 +277,7 @@ h5{
       font-size: 35px;
       position: relative;
       top: 180px;
+      font-weight: 550;
       
 }
 @media only screen and (max-width: 600px) {
