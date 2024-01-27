@@ -6,14 +6,12 @@
 body{
       background-color: #1B1B1B;
       max-height: 100vh;
-      scroll-behavior: smooth;
       overflow-y: hidden;
-
 }
 html{
       font-size: 62.5%;
       font-family: sans-serif;
-      
+      scroll-behavior: auto;
 }
 header{
       height: 100%;
@@ -36,7 +34,6 @@ li a{
 }
 .hamburger{
       display: none;
-      z-index: 1;
 }
 .bar{
       display: block;
@@ -92,7 +89,6 @@ li a{
           }
           .menu.active{
             left: 0;
-            z-index: 1;
           }
          
           .hamburger{
@@ -116,13 +112,13 @@ li a{
       width: 100%;
      
 }
-#dp{
+img{
       height: 300px;
 
 
 
 }
-#dp:hover{
+img:hover{
       border: 3px solid blue;
       border-radius: 50%;
 }
@@ -197,118 +193,4 @@ h5{
       }
 
       
-}
-.project{
-      font-size: 50px;
-      color: white;
-      text-align: center;
-}
-#weather{
-      height: 200px;
-      border: 2px solid blue;
-
-}
-#weather:hover{
-      
-}
-.weather-app{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: relative;
-      top: 50px;
-      
-}
-.weather-info{
-      display: flex;
-      justify-content: center;
-      color: white;
-      font-size: 35px;
-      position: relative;
-      top: 80px;
-      
-}
-@media only screen and (max-width: 600px) {
-            .weather-info{
-                  
-                  text-align: center;
-            }
-}
-.link-container{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      position: relative;
-      top: 100px;
-}
-.click{
-      font-size: 25px;
-      background-color:blue;
-      color: white;
-      border: 2px solid blue;
-      border-radius: 7px;
-      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif  ;
-      font-weight: bold;
-      padding: 8px;
-      
-}
-.click:hover{
-      zoom: 110%;
-      color: black;
-}
-#todo{
-      height: 200px;
-      border: 1px solid blue;
-}
-.todo-app{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: relative;
-      top: 150px;
-      
-}
-.todoapp-info{
-      display: flex;
-      justify-content: center;
-      color: white;
-      font-size: 35px;
-      position: relative;
-      top: 180px;
-      
-}
-@media only screen and (max-width: 600px) {
-      .todoapp-info{
-            
-            text-align: center;
-      }
-}
-.link2-container{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      position: relative;
-      top: 200px;
-}
-.click2{
-      font-size: 25px;
-      background-color:blue;
-      color: white;
-      border: 2px solid blue;
-      border-radius: 7px;
-      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif  ;
-      font-weight: bold;
-      padding: 8px;
-      margin-bottom: 100px; /* check this while add new project */
-      
-}
-.click2:hover{
-      zoom: 110%;
-      color: black;
-}
-.di{
-      height: 100px;
-      border: #1B1B1B;
 }
