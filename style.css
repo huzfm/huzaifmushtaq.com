@@ -118,14 +118,16 @@ li a{
 }
 #dp{
       height: 300px;
+      border: 2px solid blue;
+      border-radius: 50%;
 
 
 
 }
-#dp:hover{
+/* #dp:hover{
       border: 3px solid blue;
       border-radius: 50%;
-}
+} */
 .photo{
       display: flex;
       justify-content: center;
